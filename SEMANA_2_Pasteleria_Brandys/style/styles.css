@@ -1,0 +1,249 @@
+body{
+    font-family: 'Century Gothic';
+    background-color: pink;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.521);
+}
+header{
+    display: flex;
+    min-height: 100px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+nav a:hover{
+    color: pink;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.presentacion{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    border-radius: 7px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.presentacion .img{
+    width: 50%;
+}
+.presentacion .img img{
+    width: 100%;
+    vertical-align: top;
+}
+.info{
+    width: 50%;
+    border-radius: 0px 7px 10px 7px;
+    background-color: whitesmoke;
+}
+.texto{
+    width: 100%;
+}
+.texto h2{
+    margin-left: 30px;
+    padding-top: 140px;
+    font-size: auto;
+    font-family: Arial;
+    color: rgb(255, 164, 180);
+}
+.texto p{
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: auto;
+    font-family: Arial;
+    color: black;
+    line-height: auto;
+}
+.pedido-btn{
+    height: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: left;
+}
+.pedido-btn a{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: white;
+    background: rgb(252, 164, 178);
+    cursor: pointer;
+    text-decoration: none;
+}
+.pedido-btn a:hover{
+    background: rgb(243, 110, 110);
+}
+@media (max-width:800px){
+    .presentacion{
+        height: 290px;
+    }
+    .texto h2{
+        margin-left: 10px;
+        padding-top: 3px;
+        font-size: 20px;  
+    }
+    .texto p{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 11px;
+        line-height: auto;
+    }
+    .pedido-btn{
+        height: 8px;
+        margin-top: 5px;
+        margin-left: 10px;
+        display: flex;
+        justify-content:left;
+    }
+    .pedido-btn a{
+        font-size: 7px;
+        height: 20px;
+        width: 70px;
+        line-height: 10px;
+        border-radius: 5px;
+
+    }
+}
+.sabores{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 10px;;
+    color: white;
+    margin-top: 50px;
+}
+.menu{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: rgb(48, 48, 48);
+} 
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.contenedor .tarjeta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgb(248, 104, 128);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: whitesmoke;
+}
+.contenedor .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(248, 104, 128);
+}
+.contenedor .tarjeta img{
+    width: 330px;
+    height: 220px;
+}
+.contenedor .tarjeta h4{
+    font-weight: 600;
+    letter-spacing: 5px;
+    color:rgb(248, 104, 128);
+}
+.contenedor .tarjeta p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300px;
+}
+.menu2{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: rgb(48, 48, 48);
+} 
+.menu3{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: rgb(48, 48, 48);
+} 
+.pedir-btn{
+    height: auto;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+}
+.pedir-btn a{
+    height: 70px;
+    width: 400px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 35px;
+    color: whitesmoke;
+    background: rgb(252, 164, 178);
+    cursor: pointer;
+    text-decoration: none;
+}

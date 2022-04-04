@@ -1,0 +1,43 @@
+body{
+    font-family: 'Century Gothic';
+    background-color: pink;
+}
+.contenedor{
+    height: auto;
+    width: 70%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: whitesmoke;
+}
+.pedido{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: pink;
+}
+.servicio{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(48, 48, 48);
+}
+.Datos{
+    margin-left: 40px;
+}
+.domicilio{
+    margin-left: 40px;
+}
+.orden{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: pink; 
+}
+.order{
+    margin-left: 40px;
+}
+.botones{
+    margin-left: 40px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1,">
+    <link rel="stylesheet" href="styles.css">
+    <title>PEDIDO</title>
+</head>
+<body> 
+    <div class="contenedor">
+        <h3 class="pedido">Ordenar ahora</h3>
+        <h1 class="servicio">Servicio a domicilio</h1>
+        <form action="pedido.js">
+            <div class="Datos">
+                <label for="Nombre">Nombre</label><br>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"><br><br>
+                <label for="telefono">Número Telefónico</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" maxlength="10"><br><br>
+                <label for="Correo">Correo Electrónico</label><br>
+                <input type="email" id="Correo" name="Correo" placeholder="Correo"><br><br>
+            </div>
+            <div class="domicilio">
+                <label for="calle">Calle</label><br>
+                <input type="text" id="calle" name="calle"><br><br>
+                <label for="colonia">Colonia</label><br>
+                <input type="text" name="colonia" id="colonia"><br><br>
+                <label for="municipio">Municipio</label><br>
+                <input type="text" name="municipio" id="municipio"><br><br>
+                <label for="estado">Estado</label><br>
+                <input type="text" name="estado" id="estado"><br><br>
+                <label for="cp">Codigo Postal</label><br>
+                <input type="tel" name="cp" id="cp" maxlength="5"><br><br>
+            </div>
+        <h3 class="orden">Personaliza tu pastel</h3>
+    <div class="order">
+        <label for="pan">BIZCOCHO</label>
+        <select name="pan" id="pan">
+            <option value="chocolate">CHOCOLATE</option>
+            <option value="marmoleado">MARMOLEADO</option>
+            <option value="naranja">NARANJA</option>
+            <option value="redvelvet">REDVELVET</option>
+            <option value="rumchata">RUMCHATA</option>
+            <option value="vainilla">VAINILLA</option>
+        </select><br><br>
+        <label for="cobertura">COBERTURA</label>
+        <select name="cobertura" id="cobertura">
+            <option value="chantilly">CHANTILLY</option>
+            <option value="fondant">FONDANT</option>
+            <option value="ganache">GANACHE</option>
+        </select><br><br>
+        <label for="toppings">TOPPINGS</label>
+        <select name="toppings" id="toppings">
+            <option value="choco">MIX DE CHOCOLATE</option>
+            <option value="frutos">FRUTOS ROJOS</option>
+            <option value="cokkies">GALLETAS</option>
+        </select><br><br>
+        <br><br><label for="cantidad">CANTIDAD</label><br>
+        <input type="number" id="cantidad" name="cantidad"><br><br>
+        <label for="fecha1">Fecha de entrega:</label><br>
+        <input type="date" name="fecha1" id="fecha1"><br><br>
+        </div>
+        <div class="botones">
+        <br><br><input type="reset">
+        <input type="submit"><br>
+    </div>
+        </form>
+</body>
+</html>
